@@ -3,9 +3,10 @@ const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
+// APIパスのリライト
 server.use(
   jsonServer.rewriter({
-    "/api/datareportlist": "/datareportlist"
+    "/xxxx/xxxx": "/resorce"
   })
 );
 
